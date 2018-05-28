@@ -56,14 +56,16 @@ git commit -m "initial"
 git remote add [dokku(or whatevername you want)] [UserWeEnterBefore]@[YourVpsAdress]:node-js
 // pussh changes
 git push [RemoteHost Name] master
-//Go to http://207.246.80.76:80 and you will see your app is running (80 is the port that we exposed on the container)
-//Anytime tou wanna push changes run git add. --all && git commit -m "initial" && git push [RemoteHostName] master
+//Go to http://[YourServerIP]:80 and you will see your app is running (80 is the port that we exposed on the container)
+//Anytime tou want push changes run git add. --all && git commit -m "initial" && git push [RemoteHostName] master
 ```
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
 ## Acknowledgments
 
 * https://medium.com/dirtyjs/how-to-deploy-vue-js-app-in-one-line-with-docker-digital-ocean-2338f03d406a (is a automation of the process described here)
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
