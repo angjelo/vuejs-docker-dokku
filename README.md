@@ -1,7 +1,7 @@
 # Vue.js + Docker + Dokku (Automated Content Push)
 
 ## Getting Started
-These instructions will guide you to start with your vue js project directly deployed on the host you own so  you can start experimenting immediatelly and 
+These instructions will guide you to start with your vue js project directly deployed on the host you own so  you can start experimenting immediatelly and see the magic. 
 
 ### Prerequisites
 You need npm,yarn and docker installed in order to be able to work in the project 
@@ -52,8 +52,12 @@ cd our-test-project
 git add . --all
 //Lets commit our chanages 
 git commit -m "initial"
-git remote add dokku dokku@[YourVpsAdress]:node-js
+//add remote reposiroy
+git remote add [dokku(or whatevername you want)] [UserWeEnterBefore]@[YourVpsAdress]:node-js
+// pussh changes
+git push [RemoteHost Name] master
 //Go to http://207.246.80.76:80 and you will see your app is running (80 is the port that we exposed on the container)
+//Anytime tou wanna push changes run git add. --all && git commit -m "initial" && git push [RemoteHostName] master
 ```
 ## Acknowledgments
 
